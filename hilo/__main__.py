@@ -1,4 +1,4 @@
-from hilo.game.dealer import dealer
+from game.dealer import dealer
 
 dealer = dealer()
-dealer.game_start()
+dealer.start_game()

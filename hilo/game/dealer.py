@@ -13,24 +13,25 @@ class dealer():
 
     def start_game(self):
         while self.playing:
-            player_input()
             self.draw_cards()
+            self.player_input()
             self.update_score()
             self.game_output()
 
 
     def player_input(self):
-        print(f'The card is: {self.cards[0]}')
+        print(f'\nThe card is: {self.cards[0]}')
         self.player.player_guess()
 
     def draw_cards(self):
+        self.cards.clear()
         for x in range(2):
             x = random.randint(1,13)
             self.cards.append(x)
 
 
     def update_score(self):
-        if self.player.guess == 'h' and self.cards[0] > self.cards[1] or self.player.guess == 'l' and self.cards[0] < self.cards[1]:
+        if self.player.guess == 'h' and self.cards[0] < self.cards[1] or self.player.guess == 'l' and self.cards[0] > self.cards[1]:
             points = 100
         else:
             points = -75
@@ -44,9 +45,9 @@ class dealer():
         
         if self.score > 0:
             choice = input("Keep playing? [y/n] ")
-            self.keep_playing = (choice == "y")
+            self.playing = (choice == "y")
         else:
-            self.keep_playing = False
+            self.playing = False
 
 
 
