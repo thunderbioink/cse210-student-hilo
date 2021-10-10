@@ -35,7 +35,7 @@ root                    (project root folder)
 
 ## Authors
 ---
-Ethan Nelson
-Alma Camarilo
-Penelope Cruz
-Jack Baptista
++Ethan Nelson
++Alma Camarilo
++Penelope Cruz
++Jack Baptista
