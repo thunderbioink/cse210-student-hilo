@@ -35,4 +35,7 @@ root                    (project root folder)
 
 ## Authors
 ---
-* TODO: Add your names and emails here
++Ethan Nelson
++Alma Camarilo
++Penelope Cruz
++Jack Baptista
